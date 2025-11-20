@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "serverannouncement",
+  "version": "${version}",
+  "name": "ServerAnnouncement",
+  "description": "",
+  "authors": ["Zhiai"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/serverannouncement/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+      "top.zamc.serverannouncement.client.ServerannouncementDataGenerator"
+    ],
+    "main": [
+      "top.zamc.serverannouncement.ServerAnnouncement"
+    ]
+  },
+  "mixins": [
+    "serverannouncement.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
