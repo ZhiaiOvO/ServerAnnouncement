@@ -4,6 +4,7 @@
   "package": "top.zamc.serverannouncement.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ServerAnnounceMixin"
   ],
   "client": [
   ],
