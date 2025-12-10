@@ -27,6 +27,9 @@ public class ServerAnnouncement implements ModInitializer {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> AnnouncementSetCommand.register(dispatcher));
         new PlayerJoinServerListener();
         try {
+            if (!Files.exists(path)){
+                Files.createFile(path);
+            }
             List<String> announcement = Files.readAllLines(path);
             if (!announcement.isEmpty()) {
                 message = announcement;

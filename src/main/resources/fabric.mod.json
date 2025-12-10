@@ -5,7 +5,11 @@
   "name": "ServerAnnouncement",
   "description": "",
   "authors": ["Zhiai"],
-  "contact": {},
+  "contact": {
+    "sources": "https://github.com/ZhiaiOvO/ServerAnnouncement",
+    "homepage": "https://modrinth.com/mod/server-announcement",
+    "issues": "https://github.com/ZhiaiOvO/ServerAnnouncement/issues"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/serverannouncement/icon.png",
   "environment": "server",
